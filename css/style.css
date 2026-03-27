@@ -1,0 +1,92 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #110e0e;
+    color: white;
+}
+
+/* Hero Text Responsive (Keep your 100px idea, but make it fit mobile) */
+.hero-title {
+    font-size: 100px;
+}
+
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 40px;
+    }
+}
+
+/* Custom Maroon Theme */
+.bg-maroon {
+    background-color: #bb1e4f;
+}
+
+.btn-maroon {
+    background-color: #bb1e4f;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.btn-maroon:hover {
+    background-color: #9a1841;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Navbar Hover */
+.nav-link:hover {
+    background-color: #bb1e4f;
+    color: white !important;
+    transition: 300ms ease-in-out;
+    border-radius: 5px;
+}
+
+/* Project Cards */
+.project-card {
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.project-card img {
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(187, 30, 79, 0.3);
+}
+
+.project-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Social Links */
+.social-link {
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+.social-link:hover {
+    opacity: 1;
+    color: #bb1e4f !important;
+}

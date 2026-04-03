@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <button id="btn">Toggle Konten</button>
+    <!-- box -->
+     <div class="box" id="box">
+     </div>
+
+    <script>
+        $('#btn').click(function() {
+            alert('Tombol diklik!');
+        });
+         //contoh efek hover -->
+        $('#box').hover(
+            function() {
+                $(this).css('background-color', 'lightblue');
+            },
+            function() {
+                $(this).css('background-color', 'white');
+            }
+        );
+        //hide
+        $('#btn').click(function() {
+            $('#box').hide();
+        });
+         //show
+        $('#btn').click(function() {
+            $('#box').show();
+        });
+         //toggle
+        $('#btn').click(function() {
+            $('#box').toggle();
+        });
+         //fadeIn
+        $('#btn').click(function() {
+            $('#box').fadeIn();
+        });
+         //fadeOut
+        $('#btn').click(function() {
+            $('#box').fadeOut();
+        });
+            //slideDown
+        $('#btn').click(function() {
+            $('#box').slideDown();
+        });
+         //slideUp
+        $('#btn').click(function() {
+            $('#box').slideUp();
+            });
+            //slideToggle
+        $('#btn').click(function() {
+            $('#box').slideToggle();
+        });
+
+    </script>
+</body>
+</html>

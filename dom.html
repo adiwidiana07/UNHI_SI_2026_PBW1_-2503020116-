@@ -1,0 +1,25 @@
+<html>
+<body>
+<h1>Judul</h1>
+<p>Paragraf</p>
+
+<script>
+    let judul = document.getElementById("judul");
+    let paragraf = document.querySelector("p");
+    let semuaParagraf = document.querySelectorAll("p");
+    document.getElementById("judul").innerHTML = "Judul Baru";
+    document.getElementById("judul").textContent = "Teks Baru";
+    document.getElementById("judul").style.color = "red";
+    document.getElementById("gambar").src = "gambar2.jpg";
+    let p = document.createElement("p");
+p.textContent = "Paragraf baru";
+
+document.body.appendChild(p);
+
+let el = document.getElementById("hapus");
+el.remove();
+
+
+</script>
+</body>
+</html>

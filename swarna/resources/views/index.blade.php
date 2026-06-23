@@ -14,9 +14,6 @@
       {{ $home->hero_title }}
       <strong>{{ $home->hero_subtitle }}</strong>
     </h1>
-
-
-
     <div class="hero-cta">
       <a href="#about" class="btn-gold">{{ $home->hero_btn1_text }}</a>
       <a href="{{url('divisi')}}" class="btn-outline">{{ $home->hero_btn2_text }}</a>
@@ -42,7 +39,7 @@
         <p class="about-desc">
             {{ $home->about_description }}
         </p>
-
+        <h2 class="section-title">Portfolio</h2>
         <div class="brand-logos">
             @php
                 $brandLogos = [

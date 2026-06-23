@@ -11,7 +11,7 @@ Route::get('/', function () {
     return view('index', compact('home'));
 });
 
-Route::get('/divisi', [App\Http\Controllers\DivisiController::class, 'index']);
+Route::get('/divisi', fn() => view('divisi', ['divisis' => \App\Models\Divisi::all()]));
 Route::get('/gallery', fn() => view('gallery', ['galleryItems' => \App\Models\Gallery::all()]));
 Route::get('/contact', fn() => view('contact'));
 Route::get('/about', fn() => view('about'));

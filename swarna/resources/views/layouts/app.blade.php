@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title', 'SWARNA')</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="{{ asset('fontawesome-free-6.4.0-web/css/all.min.css') }}">
-<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+<link rel="stylesheet" href="{{ asset('fontawesome-free-6.4.2-web/css/all.min.css') }}">
 <link rel="stylesheet" href="{{ asset('bootstrap-5.0.2-dist/css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+<link rel="stylesheet" href="{{ asset('aos-master/aos-master/dist/aos.css') }}">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
@@ -20,13 +21,13 @@
 </a>
 
   <button class="nav-toggle" id="navToggle" aria-label="Menu">
-    <span class="fa-solid fa-bars"></span>
-    </span>
+    <span class="fa fa-bars"></span>
   </button>
 
   <ul class="nav-links" id="navLinks">
     <li><a href="{{ url('/') }}">Home</a></li>
-    <li><a href="{{ url('/about') }}">About</a></li>
+    <li><a href="{{ url('/#about') }}">About</a></li>
+    <li><a href="{{ url('/divisi') }}">Divisi</a></li>
     <li><a href="{{ url('/gallery') }}">Galeri</a></li>
     <li><a href="{{ url('/#cta') }}">Kontak</a></li>
   </ul>
@@ -87,7 +88,7 @@
         </div>
       </div>
 
-    </div><!-- /footer-top -->
+    </div>
 
     <div class="footer-bottom">
       <p>© 2025 <span class="gold-accent">SWARNA</span> Production. All rights reserved.</p>
@@ -99,6 +100,10 @@
     <script src="{{ asset('js/script.js') }}"></script>
     <script src="{{ asset('bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('fontawesome-free-6.4.0-web/js/all.min.js') }}"></script>
+    <script src="{{ asset('aos-master/aos-master/dist/aos.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

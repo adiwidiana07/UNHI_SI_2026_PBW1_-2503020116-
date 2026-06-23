@@ -7,8 +7,8 @@
     <title>@yield('title', 'SWARNA') - Login</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="{{ asset('fontawesome-free-6.4.0-web/css/all.min.css') }}">
-<link rel="stylesheet" href="{{ asset('css/login.css') }}">
 <link rel="stylesheet" href="{{ asset('bootstrap-5.0.2-dist/css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/login.css') }}">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
@@ -17,8 +17,8 @@
         <form method="POST" action="{{ route('login') }}">
             @csrf
             <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="username">Username:</label>
+                <input type="username" id="username" name="username" required>
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>

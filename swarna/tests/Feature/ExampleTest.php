@@ -2,11 +2,12 @@
 
 namespace Tests\Feature;
 
-// use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 class ExampleTest extends TestCase
 {
+    use RefreshDatabase;
     /**
      * A basic test example.
      */
@@ -15,5 +16,15 @@ class ExampleTest extends TestCase
         $response = $this->get('/');
 
         $response->assertStatus(200);
+    }
+
+    public function test_gallery_page_renders_successfully(): void
+    {
+        $this->seed();
+
+        $response = $this->get('/gallery');
+
+        $response->assertStatus(200);
+        $response->assertSee('Desain Batik Modern');
     }
 }
